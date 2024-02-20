@@ -22,7 +22,7 @@ const allBtn = document.getElementsByClassName('add-btn');
     handleSeatSelection(event.target.id);
   }
  });
- 
+        
  
  // Function to handle seat selection
  function handleSeatSelection(seatId) {
@@ -33,7 +33,11 @@ const allBtn = document.getElementsByClassName('add-btn');
     grandTotalPrice = totalPrice;
     updateUI();
   }
- }
+  else {
+    alert('You can only select up to 4 seats!');
+}
+}
+ 
  
  
  // Function to update UI
@@ -121,7 +125,7 @@ const allBtn = document.getElementsByClassName('add-btn');
  
  // Add selected seat to card section
  function addSeatToCard(seatId) {
-  const cardSection = document.getElementById('card-section');
+  const cardSection = document.getElementById('card');
   cardSection.innerHTML += `
     <tr id="seat-id-${seatId}" class="font-inter mb-4">
                     <td class="flex gap-1 items-center">
@@ -133,10 +137,11 @@ const allBtn = document.getElementsByClassName('add-btn');
   `;
  }
  
+
  
  // Remove selected seat from card section
  function removeSeatFromCard(seatId) {
-  const cardSection = document.getElementById('card-section');
+  const cardSection = document.getElementById('card');
   const seatElement = document.getElementById(`seat-id-${seatId}`);
   if (seatElement) {
     cardSection.removeChild(seatElement);

@@ -245,24 +245,24 @@
                             class="add-btn bg-[#F7F8F8] h-[56px] w-[110px] rounded-xl text-[#03071280] font-inter font-medium text-lg">A2</button>
                         </div>
                         <div class="flex gap-4  items-center">
-                          <button  id=""
+                          <button  onclick="highlightTopSeats('seat3')" id="seat3"
                             class="add-btn bg-[#F7F8F8] h-[56px] w-[110px] rounded-xl text-[#03071280] font-inter font-medium text-lg">A3</button>
-                          <button  id= " "
+                          <button onclick="highlightTopSeats('seat4')" id="seat4"
                             class="add-btn bg-[#F7F8F8] h-[56px] w-[110px] rounded-xl text-[#03071280] font-inter font-medium text-lg">A4</button>
                         </div>
                       </div>
                       <div class="flex justify-between my-3">
                         <div class="flex gap-4  items-center">
                           <p class=" text-[#03071280] font-inter font-medium text-lg">B</p>
-                          <button onclick="highlightTopSeats('seat3')" id="seat3"
+                          <button onclick="highlightTopSeats('seat5')" id="seat5"
                             class="add-btn bg-[#F7F8F8] h-[56px] w-[110px] rounded-xl text-[#03071280] font-inter font-medium text-lg">B1</button>
-                          <button onclick="highlightTopSeats('seat4')" id="seat4"
+                          <button onclick="highlightTopSeats('seat7')" id="seat7"
                             class="add-btn bg-[#F7F8F8] h-[56px] w-[110px] rounded-xl text-[#03071280] font-inter font-medium text-lg">B2</button>
                         </div>
                         <div class="flex gap-4  items-center">
-                          <button  id="b3"
+                          <button  onclick="highlightTopSeats('seat8')" id="seat8"
                             class="add-btn bg-[#F7F8F8] h-[56px] w-[110px] rounded-xl text-[#03071280] font-inter font-medium text-lg">B3</button>
-                          <button  id="b4"
+                          <button  onclick="highlightTopSeats('seat9')" id="seat9"
                             class="add-btn bg-[#F7F8F8] h-[56px] w-[110px] rounded-xl text-[#03071280] font-inter font-medium text-lg">B4</button>
                         </div>
                       </div>
@@ -275,7 +275,7 @@
                             class="bg-[#F7F8F8] h-[56px] w-[110px] rounded-xl text-[#03071280] font-inter font-medium text-lg">C2</button>
                         </div>
                         <div class="flex gap-4  items-center">
-                          <button
+                          <button onclick="highlightTopSeats('seat7')" id="seat7"
                             class="bg-[#F7F8F8] h-[56px] w-[110px] rounded-xl text-[#03071280] font-inter font-medium text-lg">C3</button>
                           <button
                             class="bg-[#F7F8F8] h-[56px] w-[110px] rounded-xl text-[#03071280] font-inter font-medium text-lg">C4</button>
@@ -428,7 +428,7 @@
                               <th class="text-end">Price</th>
                             </tr>
                           </thead>
-                          <tbody id="card-section">
+                          <tbody id="card">
           
                           </tbody>
                         </table>
@@ -455,7 +455,7 @@
                         <input type="text" placeholder="Enter your name" class="input input-bordered w-[434px]" />
                       </div>
                       <div>
-                        <p class="font-medium font-inter my-2">Phone Number*</p>
+                        <p id="phone"  class="font-medium font-inter my-2">Phone Number*</p>
                         <input type="text" placeholder="Enter your phone number" class="input input-bordered w-[434px]" />
                       </div>
                       <div>
