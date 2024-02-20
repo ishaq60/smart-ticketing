@@ -152,5 +152,3 @@ const allBtn = document.getElementsByClassName('add-btn');
 
   targetSection.scrollIntoView({ behavior: "smooth" });
 });
- 
- 
