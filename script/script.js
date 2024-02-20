@@ -147,5 +147,10 @@ const allBtn = document.getElementsByClassName('add-btn');
     cardSection.removeChild(seatElement);
   }
  }
+ document.getElementById("continue-btn").addEventListener("click", function () {
+  var targetSection = document.getElementById("scrollButton");
+
+  targetSection.scrollIntoView({ behavior: "smooth" });
+});
  
  
